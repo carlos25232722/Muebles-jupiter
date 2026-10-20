@@ -34,7 +34,6 @@
                 </select>
                 <br><br>
 
-                <!-- Casillas de verificación agrupadas -->
                 <fieldset>
                     <legend>Elementos especificos afectados:</legend>
                     <input type="checkbox" id="afectaMonitor" name="afectados" value="monitor">
@@ -48,10 +47,17 @@
                 </fieldset>
                 <br>
 
-                <!-- Área de texto (Textarea) -->
                 <label for="descripcion">Descripción detallada de la falla:</label><br>
                 <textarea id="descripcion" name="descripcion" rows="4" placeholder="Ej: El equipo de la mesa 3 no enciende..." required></textarea>
                 <br><br>
+
+                <!-- Carga de Imagen -->
+                <label for="evidencia">Adjuntar fotografia de evidencia (Obligatorio): </label>
+                <input type="file" id="evidencia" name="evidencia" accept="image/*" required>
+                <br><br>
+
+                <!-- Botón de Envío -->
+                <button type="submit">Registrar Novedad</button>
             </form>
         </section>
     </main>
