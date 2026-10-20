@@ -17,6 +17,26 @@
             <h2>Aviso de Privacidad</h2>
             <p>Los datos recogidos en este formulario serán utilizados única y exclusivamente para gestionar la resolución y seguimiento de los equipos e instalaciones del ambiente de aprendizaje.</p>
         </section>
+
+        <section>
+            <h2>Detalles del Reporte</h2>
+            <form action="#" method="POST">
+                <!-- Campo de Texto Básico -->
+                <label for="nombreCompleto">Nombre del Aprendiz:</label>
+                <input type="text" id="nombreCompleto" name="nombreCompleto" required>
+                <br><br>
+
+                <!-- Lista Desplegable (Combobox) -->
+                <label for="tipoNovedad">Tipo de Novedad: </label>
+                <select id="tipoNovedad" name="tipoNovedad" required>
+                    <option value="">Seleccione una categoria...</option>
+                    <option value="hardware">Daño en equipo de cómputo</option>
+                    <option value="software">Falla de software o red</option>
+                    <option value="infraestructura">Daño en mobiliario o electricidad</option>
+                </select>
+                <br><br>
+            </form>
+        </section>
     </main>
 </body>
 </html>
